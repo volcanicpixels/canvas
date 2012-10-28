@@ -1,0 +1,3 @@
+Theme thumbnail
+Links to older, new articles on posts
+tooltips on links

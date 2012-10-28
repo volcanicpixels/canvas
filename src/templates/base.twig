@@ -1,0 +1,38 @@
+{% block html %}
+	<!DOCTYPE html>
+	<!--[if lt IE 7]>		<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+	<!--[if IE 7]>			<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+	<!--[if IE 8]>			<html class="no-js lt-ie9"> <![endif]-->
+	<!--[if gt IE 8]><!-->	<html class="no-js"> <!--<![endif]-->
+		{% block head %}
+			<head>
+				<meta charset="utf-8">
+				<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+				{% block title %}
+					<title>{{ wp_title() }}</title>
+				{% endblock %}
+				<meta name="description" content="">
+				<meta name="viewport" content="width=device-width">
+
+				<link rel="stylesheet" href="{{ stylesheet_uri }}">
+
+				{{ wp_head() }}
+
+			</head>
+		{% endblock head %}
+		{% block body %}
+			<body {{ body_class() }} >
+				{% block chromeframe %}
+				<!--[if lt IE 7]>
+					<p class="chromeframe">You are using a crappy browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+				<![endif]-->
+				{% endblock chromeframe %}
+
+				{% block content %}
+
+				{% endblock content %}
+				{{ wp_footer() }}
+			</body>
+		{% endblock body %}
+	</html>
+{% endblock html %}

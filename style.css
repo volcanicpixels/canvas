@@ -120,12 +120,13 @@ a:hover {
  * and Chrome.
  */
 h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
+  font-size: 1.4rem;
+  margin: 3.4rem 0 0.5rem;
 }
-h2 {
-  font-size: 1.5em;
-  margin: 0.83em 0;
+h2,
+.article-list .article-title {
+  font-size: 1.2rem;
+  margin: 2.1rem 0 0.3rem;
 }
 h3 {
   font-size: 1.17em;
@@ -634,43 +635,6 @@ textarea {
 /*
 	Global Styles
 */
-body {
-  color: #121212;
-}
-a {
-  text-decoration: none;
-}
-/*
-	Mixins
-*/
-.noselect {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-}
-/*
-Global styles
-*/
-body {
-  position: relative;
-}
-a {
-  cursor: pointer;
-}
-section {
-  padding: 40px;
-}
-/*
-	Styles
-*/
-.wrapper {
-  max-width: 960px;
-  min-width: 220px;
-  margin-left: auto;
-  margin-right: auto;
-}
 a .site-logo {
   cursor: pointer;
 }
@@ -693,55 +657,229 @@ a .site-logo {
   text-transform: uppercase;
   letter-spacing: 3px;
 }
-.masthead-logo {
-  float: left;
+/*
+	Mixins
+*/
+.noselect {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 }
-.masthead-logo.test {
-  position: absolute;
-  top: 10px;
-  left: 10px;
+/*
+Global styles
+*/
+* {
+  box-sizing: border-box;
 }
-.masthead {
-  width: 980px;
+html,
+body,
+button,
+input,
+select,
+textarea {
+  font-size: 20px;
+}
+body,
+textarea {
+  line-height: 1.4;
+}
+a {
+  cursor: pointer;
+  text-decoration: underline;
+}
+section {
+  padding: 40px;
+}
+h1,
+h2,
+.article-list .article-title,
+h3 {
+  font-weight: 600;
+}
+.article-header .article-title > a {
+  color: inherit;
+  text-decoration: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+}
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1rem;
+  margin-top: 1.3rem;
+  margin-bottom: 0.2rem;
+}
+p + p,
+p + ul,
+p + ol,
+p + dl,
+p + figure,
+p + img,
+p + blockquote,
+p + pre,
+p + div.highlight,
+p + small,
+p + dd,
+p + figcaption,
+ul + p,
+ul + ul,
+ul + ol,
+ul + dl,
+ul + figure,
+ul + img,
+ul + blockquote,
+ul + pre,
+ul + div.highlight,
+ul + small,
+ul + dd,
+ul + figcaption,
+ol + p,
+ol + ul,
+ol + ol,
+ol + dl,
+ol + figure,
+ol + img,
+ol + blockquote,
+ol + pre,
+ol + div.highlight,
+ol + small,
+ol + dd,
+ol + figcaption,
+dl + p,
+dl + ul,
+dl + ol,
+dl + dl,
+dl + figure,
+dl + img,
+dl + blockquote,
+dl + pre,
+dl + div.highlight,
+dl + small,
+dl + dd,
+dl + figcaption,
+figure + p,
+figure + ul,
+figure + ol,
+figure + dl,
+figure + figure,
+figure + img,
+figure + blockquote,
+figure + pre,
+figure + div.highlight,
+figure + small,
+figure + dd,
+figure + figcaption,
+img + p,
+img + ul,
+img + ol,
+img + dl,
+img + figure,
+img + img,
+img + blockquote,
+img + pre,
+img + div.highlight,
+img + small,
+img + dd,
+img + figcaption,
+blockquote + p,
+blockquote + ul,
+blockquote + ol,
+blockquote + dl,
+blockquote + figure,
+blockquote + img,
+blockquote + blockquote,
+blockquote + pre,
+blockquote + div.highlight,
+blockquote + small,
+blockquote + dd,
+blockquote + figcaption,
+pre + p,
+pre + ul,
+pre + ol,
+pre + dl,
+pre + figure,
+pre + img,
+pre + blockquote,
+pre + pre,
+pre + div.highlight,
+pre + small,
+pre + dd,
+pre + figcaption,
+div.highlight + p,
+div.highlight + ul,
+div.highlight + ol,
+div.highlight + dl,
+div.highlight + figure,
+div.highlight + img,
+div.highlight + blockquote,
+div.highlight + pre,
+div.highlight + div.highlight,
+div.highlight + small,
+div.highlight + dd,
+div.highlight + figcaption,
+small + p,
+dd + p,
+figcaption + p,
+small + ul,
+dd + ul,
+figcaption + ul,
+small + ol,
+dd + ol,
+figcaption + ol,
+small + dl,
+dd + dl,
+figcaption + dl,
+small + figure,
+dd + figure,
+figcaption + figure,
+small + img,
+dd + img,
+figcaption + img,
+small + blockquote,
+dd + blockquote,
+figcaption + blockquote,
+small + pre,
+dd + pre,
+figcaption + pre,
+small + div.highlight,
+dd + div.highlight,
+figcaption + div.highlight,
+small + small,
+dd + small,
+figcaption + small,
+small + dd,
+dd + dd,
+figcaption + dd,
+small + figcaption,
+dd + figcaption,
+figcaption + figcaption {
+  margin-top: 1em;
+}
+pre,
+code,
+kbd,
+samp {
+  typeface: inconsolata, "Lucida Console", Monaco, monospace;
+  margin: 0;
+  padding: 0;
+}
+/*
+	Styles
+*/
+.wrapper {
+  max-width: 960px;
+  min-width: 320px;
   margin-left: auto;
   margin-right: auto;
-  *zoom: 1;
-  padding: 20px 0px;
 }
-.masthead:before,
-.masthead:after {
-  content: " ";
-  display: table;
-}
-.masthead:after {
-  clear: both;
-}
-.masthead nav {
-  margin: 0px auto;
-  line-height: 42px;
-  text-align: center;
-}
-.masthead nav ul {
-  display: inline-block;
-}
-.masthead nav ul li {
-  float: left;
-}
-nav ul {
-  *zoom: 1;
-  margin: 0px;
-}
-nav ul:before,
-nav ul:after {
-  content: " ";
-  display: table;
-}
-nav ul:after {
-  clear: both;
-}
-nav ul li {
-  float: left;
-  margin: 0px 30px;
+.small-wrapper {
+  max-width: 800px;
+  min-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
 }
 /*
 	Headings
@@ -758,15 +896,19 @@ nav ul li {
 /*
 	Sections
 */
-section.links {
+.section.links {
   background: WhiteSmoke;
   padding: 60px 40px;
 }
-section.blurb {
+.section.blurb {
   padding-bottom: 80px;
 }
-section.blurb h1 {
+.section.blurb h1 {
   margin: 0px;
+}
+.section.blurb a {
+  text-decoration: none;
+  border-bottom: 1px dashed #ec4933;
 }
 /*
 	Links
@@ -785,16 +927,135 @@ section.blurb h1 {
   color: black;
   font-size: 18px;
   margin: 0px 20px;
+  text-decoration: none;
 }
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+/*
+	Articles
+*/
+.page-title {
+  margin: 0.5rem 0 0.5rem;
+}
+.article,
+.header {
+  box-sizing: content-box;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 35rem;
+}
+.article {
+  padding: 2rem 1rem;
+}
+.article:after,
+.article-header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.article-header .article-title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.article-header .article-date {
+  display: block;
+  font-size: 0.8rem;
+}
+.article-content {
+  margin-top: 1.3rem;
+}
+.article-content > p:firstchild {
+  font-size: 1.2rem;
+}
+.article-content blockquote,
+.article-content figure {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.article-list {
+  list-style: none;
+  padding: 1rem 0;
+  margin: 0;
+}
+.article-list .article {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+.article-list > li:first-child .article {
+  padding-top: 0px;
+}
+.article-list > li:last-child .article {
+  padding-bottom: 0px;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary,
+audio,
+canvas,
+embed,
+img,
+nav,
+object,
+video {
+  display: block;
+}
+@media (max-width: 1000px) {
+  html,
+  body,
+  button,
+  input,
+  select,
+  textarea {
+    font-size: 18px;
+  }
+}
+@media (max-width: 800px) {
+  html,
+  body,
+  button,
+  input,
+  select,
+  textarea {
+    font-size: 16px;
+  }
+}
+@media (min-width: 481px) {
+  .article {
+    padding-right: 6rem;
+    padding-left: 6rem;
+  }
+}
+@media (max-width: 480px) {
+  .article-list {
+    text-align: center;
+    padding: 1.3rem;
+  }
+}
+@media (min-width: 1400px) {
+  .article-body blockquote,
+  .article-body figure,
+  .article-body blockquote + small,
+  .article-body blockquote + dd,
+  .article-body blockquote + figcaption,
+  .article-body figure + small,
+  .article-body figure + dd,
+  .article-body figure + figcaption {
+    margin-right: -4.5rem;
+    margin-left: -4.5rem;
+  }
+}
+@media only screen and (max-width: 1024px) {
   /* Styles */
+  .large-heading {
+    font-size: 40px;
+  }
 }
-/* Smartphones (landscape) ----------- */
-@media only screen and (min-width: 321px) {
-  /* Styles */
-}
-/* Smartphones (portrait) ----------- */
 @media only screen and (max-width: 320px) {
   /* Styles */
   .block-link {
@@ -814,26 +1075,6 @@ section.blurb h1 {
     padding: 20px 30px;
   }
 }
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* Styles */
-}
-/* iPads (landscape) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  /* Styles */
-}
-/* iPads (portrait) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  /* Styles */
-}
-/* Desktops and laptops ----------- */
-@media only screen and (min-width: 1224px) {
-  /* Styles */
-}
-/* Large screens ----------- */
-@media only screen and (min-width: 1824px) {
-  /* Styles */
-}
 /*
 	Default Colour Scheme
 */
@@ -842,25 +1083,37 @@ section.blurb h1 {
 Variables:
 
 
-@site-logo-primary:;
-@site-logo-secondary:;
+@site-primary:;
+@site-secondary:;
 
 */
+html,
+body,
+button,
+input,
+select,
+textarea {
+  color: #57534a;
+}
 a {
   color: #ec4933;
-  border-bottom: 1px dashed #ec4933;
 }
-a:hover {
+a:hover,
+a:focus {
   color: #f59c90;
   border-bottom-color: #f59c90;
 }
-a:visited {
-  color: #f07362;
-  border-bottom-color: #f07362;
+/*
+	Headings
+*/
+h1,
+h2,
+.article-list .article-title,
+h3 {
+  color: #201e1b;
 }
-a:visited:hover {
-  color: #f59c90;
-  border-bottom-color: #f59c90;
+.article-list .article-title:hover a {
+  color: #ec4933;
 }
 /*
 	Site logo
@@ -888,8 +1141,16 @@ a:visited:hover {
   color: #000000;
 }
 .block-link:hover,
-.block-link:visited:hover {
+.block-link:visited:hover,
+.block-link:focus,
+.block-link:visited:focus {
   border-color: #000000;
   background: #000000;
   color: #ffffff;
+}
+/*
+	Article styles
+*/
+.article-header .article-date {
+  color: #8d877a;
 }

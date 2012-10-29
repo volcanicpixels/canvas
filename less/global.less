@@ -1,0 +1,32 @@
+
+/*
+	Global Styles
+*/
+a {
+	.site-logo {
+		cursor: pointer;
+	}
+}
+
+.logo-container {
+	text-align: center;
+}
+
+.site-logo {
+	@scaling: 3px;
+	display: inline-block;
+	border-width: @scaling * 2;
+	border-style: solid;
+	cursor: default;
+	font-family: Courier;
+	font-size: @scaling * 4;
+
+	.primary, .secondary {
+		display: inline-block;
+		line-height: @scaling * 10;
+		padding: 0px @scaling * 2;
+		text-transform: uppercase;
+		letter-spacing: @scaling;
+	}
+
+}

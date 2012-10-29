@@ -1,3 +1,5 @@
+{% import 'macros.twig' as macros %}
+
 {% block html %}
 	<!DOCTYPE html>
 	<!--[if lt IE 7]>		<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -27,9 +29,34 @@
 					<p class="chromeframe">You are using a crappy browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
 				<![endif]-->
 				{% endblock chromeframe %}
-
+				{% block logo %}
+					<section class="logo-container">
+						{{ macros.site_logo() }}
+					</section>
+				{% endblock logo %}
 				{% block content %}
+					{% block posts %}
+						{% for i in post_count() %}
+							{{ the_post() }}
+							{% block post %}
+								<article {{ post_class() }}>
+									<h1 class="article-title">
+										<a class="article-link" href="{{ the_permalink() }}">
+											{{ the_title() }}
+										</a>
+									</h1>
+									<time class="article-date" datetime="{{ get_the_date( 'Y-m-d' ) }}">
+										{{ get_the_date( 'j F, Y' ) }}
+									</time>
+									<div class="article-content">
+										{{ the_content() | raw }}
+									</div>
+								</article>
+							{% endblock post %}
+						{% else %}
 
+						{% endfor %}
+					{% endblock posts %}
 				{% endblock content %}
 				{{ wp_footer() }}
 			</body>

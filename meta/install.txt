@@ -1,0 +1,5 @@
+Installtion instructions:
+
+Rewrite posts to articles
+Create Articles page
+Create Projects post type

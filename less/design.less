@@ -1,0 +1,80 @@
+/*
+
+Variables:
+
+
+@site-primary:;
+@site-secondary:;
+
+*/
+
+html, body, button, input, select, textarea {
+	color: @text-color;
+}
+
+a {
+	color: @link-color;
+	//border-bottom: 1px dashed @link-color;
+
+	&:hover, &:focus {
+		color: lighten(@link-color, 20%);
+		border-bottom-color: lighten(@link-color, 20%);
+	}
+}
+
+/*
+	Headings
+*/
+h1, h2, .article-list .article-title, h3 {
+	color: darken(@text-color,20%);
+}
+
+.article-list .article-title {
+	&:hover a {
+		color: @link-color;
+	}
+}
+
+
+/*
+	Site logo
+*/
+
+
+.site-logo {
+	border-color: @site-primary;
+
+	.primary, &:hover .secondary {
+		background: @site-primary;
+		color: @site-secondary;
+	}
+
+	.secondary, &:hover .primary {
+		background: @site-secondary;
+		color: @site-primary;
+	}
+}
+
+/*
+	Links
+*/
+
+.block-link, .block-link:visited {
+	border-color: @site-primary;
+	background: @site-secondary;
+	color: @site-primary;
+
+	&:hover, &:focus {
+		border-color: @site-primary;
+		background: @site-primary;
+		color: @site-secondary;
+	}
+}
+
+/*
+	Article styles
+*/
+
+.article-header .article-date {
+	color: lighten(@text-color, 20%);
+}

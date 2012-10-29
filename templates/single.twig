@@ -1,0 +1,19 @@
+{% extends 'base.twig' %}
+
+{% block post %}
+<article {{ post_class( 'article' ) }}>
+	<header class="article-header">
+		<h1 class="article-title">
+			<a class="article-link" href="{{ the_permalink() }}">
+				{{ the_title() }}
+			</a>
+		</h1>
+		<time class="article-date" datetime="{{ get_the_date( 'Y-m-d' ) }}">
+			{{ get_the_date( 'j F, Y' ) }}
+		</time>
+	</header>
+	<div class="article-content">
+		{{ the_content() | raw }}
+	</div>
+</article>
+{% endblock post %}

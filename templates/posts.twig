@@ -1,0 +1,30 @@
+{% extends 'base.twig' %}
+
+
+{% block content %}
+	<header class="header">
+		<h1 class="page-title">Articles</h1>
+	</header>
+	<ul class="article-list">
+		{{ block('posts') }}
+	</ul>
+{% endblock content %}
+
+
+
+{% block post %}
+	<li>
+		<article {{ post_class( 'article') }}>
+			<header class="article-header">
+				<h1 class="article-title">
+					<a class="article-link" href="{{ the_permalink() }}">
+						{{ the_title() }}
+					</a>
+				</h1>
+				<time class="article-date" datetime="{{ get_the_date( 'Y-m-d' ) }}">
+					{{ get_the_date( 'j F, Y' ) }}
+				</time>
+			</header>
+		</article>
+	</li>
+{% endblock post %}

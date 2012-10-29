@@ -1,5 +1,5 @@
 <?php
-require_once( '/lavatheme/functions.php' );
+require_once( dirname(__file__) . '/lavatheme/functions.php' );
 
 class Volcanic_Pixels_Canvas extends Volcanic_Pixels_Theme {
 	function register_nav_menus() {

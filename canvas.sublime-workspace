@@ -4,8 +4,12 @@
 		"selected_items":
 		[
 			[
+				"font",
+				"font-size"
+			],
+			[
 				"text",
-				"text-align"
+				"text-decoration"
 			],
 			[
 				"Twi",
@@ -291,94 +295,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "src/style.less",
-			"settings":
-			{
-				"buffer_size": 2167,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/less/design.less",
-			"settings":
-			{
-				"buffer_size": 1006,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/index.php",
-			"settings":
-			{
-				"buffer_size": 80,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/functions.php",
-			"settings":
-			{
-				"buffer_size": 517,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/lavatheme/functions.php",
-			"settings":
-			{
-				"buffer_size": 2122,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/templates/base.twig",
-			"settings":
-			{
-				"buffer_size": 1244,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/templates/front_page.twig",
-			"settings":
-			{
-				"buffer_size": 884,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/templates/macros.twig",
-			"settings":
-			{
-				"buffer_size": 149,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/less/h5bp.less",
-			"settings":
-			{
-				"buffer_size": 3189,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "<div class=\"masthead\">\n			<a class=\"masthead-logo\" href=\"<?php echo home_url(); ?>\" title=\"<?php bloginfo() ?>\">\n				<div class=\"site-logo\">\n					<span class=\"primary\"><?php echo Volcanic_Pixels_Canvas::get_logo_text(1); ?></span><span class=\"secondary\"><?php echo Volcanic_Pixels_Canvas::get_logo_text(2); ?></spam>\n				</div>\n			</a>\n			<nav role=\"navigation\" class=\"site-navigation\">\n				<?php Volcanic_Pixels_Canvas::primary_menu(); ?>\n			</nav>\n		</div>",
-			"settings":
-			{
-				"buffer_size": 458,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "meta/todo.txt",
-			"settings":
-			{
-				"buffer_size": 72,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "Packages/User/lofty.sublime-build",
 	"command_palette":
@@ -420,13 +336,22 @@
 	},
 	"file_history":
 	[
+		"/G/Projects/volcanicpixels/manifest.yml",
+		"/G/Projects/canvas/src/functions.php",
+		"/G/Projects/canvas/src/less/mobile.less",
+		"/G/Projects/canvas/src/less/legacy.css",
+		"/G/Projects/canvas/src/templates/macros.twig",
+		"/G/Projects/canvas/src/less/h5bp.less",
+		"/G/Projects/canvas/src/index.php",
+		"/G/Projects/canvas/src/less/design.less",
+		"/G/Projects/canvas/meta/install.txt",
+		"/G/Projects/canvas/src/templates/base.twig",
+		"/G/Projects/_legacy_/Volcanic-Pixels/Volcanic Pixels.sublime-workspace",
 		"/G/Projects/canvas/src/less/global.less",
 		"/G/Projects/canvas/src/footer.php",
 		"/G/Projects/canvas/src/header.php",
 		"/G/Projects/canvas/src/frontpage.php",
 		"/G/Projects/canvas/src/lavatheme/functions.php",
-		"/G/Projects/canvas/src/less/design.less",
-		"/G/Projects/canvas/src/less/h5bp.less",
 		"/C/Users/Daniel/Downloads/initializr-verekia-4.0/initializr/index.html",
 		"/G/Projects/canvas/src/js/modernizr.js",
 		"/C/Users/Daniel/Downloads/initializr-verekia-4.0/initializr/js/vendor/modernizr-2.6.1-respond-1.1.0.min.js",
@@ -538,16 +463,7 @@
 		"/D/Projects/Private-Blog/src/skins/default/assets/less/_mixins.less",
 		"/D/Projects/Private-Blog/libs/lava/classes/Widget.php",
 		"/D/Projects/Private-Blog/libs/lava/classes/Widget/Controller.php",
-		"/D/Projects/Private-Blog/build/classes/Widget/Controller.php",
-		"/D/Projects/Private-Blog/build/classes/Extension/Controller.php",
-		"/D/Projects/Blank-Plugin/src/plugin.php",
-		"/D/Projects/Private-Blog/build/classes/Base.php",
-		"/D/Projects/Privacy-Plugin/plugin.php",
-		"/C/Users/Daniel/Documents/My Web Sites/WordPress Dev/wp-content/plugins/private-blog/assets/css/lava.css",
-		"/C/Users/Daniel/Documents/My Web Sites/WordPress Dev/wp-content/plugins/private-blog/plugin.php",
-		"/D/Projects/Private-Blog/build/classes/Skin/Controller.php",
-		"/D/Projects/Private-Blog/libs/lava/templates/default/Scene/default.twig",
-		"/D/Projects/Private-Blog/libs/lava/templates/default/Programme.twig"
+		"/D/Projects/Private-Blog/build/classes/Widget/Controller.php"
 	],
 	"find":
 	{
@@ -572,6 +488,9 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"code",
+			"lucida",
+			"media",
 			"select",
 			"visited",
 			"iframe.twig",
@@ -636,308 +555,13 @@
 	"groups":
 	[
 		{
-			"selected": 6,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "src/style.less",
-					"settings":
-					{
-						"buffer_size": 2167,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2161,
-								2161
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1897.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/less/design.less",
-					"settings":
-					{
-						"buffer_size": 1006,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								537,
-								537
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "src/index.php",
-					"settings":
-					{
-						"buffer_size": 80,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								77,
-								77
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "src/functions.php",
-					"settings":
-					{
-						"buffer_size": 517,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								57,
-								79
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "src/lavatheme/functions.php",
-					"settings":
-					{
-						"buffer_size": 2122,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								729,
-								729
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 75.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "src/templates/base.twig",
-					"settings":
-					{
-						"buffer_size": 1244,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								324,
-								324
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Twig/Syntaxes/HTML (Twig).tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "src/templates/front_page.twig",
-					"settings":
-					{
-						"buffer_size": 884,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								884,
-								884
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Twig/Syntaxes/HTML (Twig).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "src/templates/macros.twig",
-					"settings":
-					{
-						"buffer_size": 149,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								82,
-								82
-							]
-						],
-						"settings":
-						{
-							"auto_name": "",
-							"syntax": "Packages/Twig/Syntaxes/HTML (Twig).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "src/less/h5bp.less",
-					"settings":
-					{
-						"buffer_size": 3189,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								508,
-								508
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		},
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 9,
-					"settings":
-					{
-						"buffer_size": 458,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								327,
-								117
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "meta/todo.txt",
-					"settings":
-					{
-						"buffer_size": 72,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								72,
-								72
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -969,7 +593,7 @@
 		"cols":
 		[
 			0.0,
-			0.967213114754,
+			0.326229508197,
 			1.0
 		],
 		"rows":

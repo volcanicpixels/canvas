@@ -7,6 +7,8 @@ class Volcanic_Pixels_Theme {
 
 	function __construct() {
 		add_action( 'wp_enqueue_scripts', array( $this, 'do_scripts' ) );
+		add_action( 'init', array( $this, 'init' ) );
+		add_action( 'admin_menu', array( $this, 'admin_menu' ) );
 		$this->register_nav_menus();
 		self::set_theme( $this );
 	}
@@ -17,6 +19,14 @@ class Volcanic_Pixels_Theme {
 
 	static function get_theme() {
 		return self::$theme;
+	}
+
+	function init() {
+
+	}
+
+	function admin_menu() {
+		
 	}
 
 	function register_nav_menus() {

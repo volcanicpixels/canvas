@@ -295,6 +295,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "functions.php",
+			"settings":
+			{
+				"buffer_size": 522,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "Packages/User/lofty.sublime-build",
 	"command_palette":
@@ -336,6 +344,10 @@
 	},
 	"file_history":
 	[
+		"/G/Projects/www.volcanicpixels.com/wp-config.php",
+		"/G/Projects/www.volcanicpixels.com/Boxfile",
+		"/G/Projects/canvas/less/legacy.css",
+		"/C/Users/Daniel/AppData/Local/GitHub/PortableGit_8810fd5c2c79c73adcc73fd0825f3b32fdb816e7/doc/git/html/git-push.html",
 		"/G/Projects/volcanicpixels/manifest.yml",
 		"/G/Projects/canvas/src/functions.php",
 		"/G/Projects/canvas/src/less/mobile.less",
@@ -459,11 +471,7 @@
 		"/D/Projects/Private-Blog/libs/lava/templates/default/Button/default.twig",
 		"/D/Projects/Private-Blog/libs/lava/templates/default/Button/primary.twig",
 		"/D/Projects/Private-Blog/libs/lava/templates/default/Button/none.twig",
-		"/D/Projects/Privacy-Plugin/lava/data/buttons/settings.yaml",
-		"/D/Projects/Private-Blog/src/skins/default/assets/less/_mixins.less",
-		"/D/Projects/Private-Blog/libs/lava/classes/Widget.php",
-		"/D/Projects/Private-Blog/libs/lava/classes/Widget/Controller.php",
-		"/D/Projects/Private-Blog/build/classes/Widget/Controller.php"
+		"/D/Projects/Privacy-Plugin/lava/data/buttons/settings.yaml"
 	],
 	"find":
 	{
@@ -555,8 +563,36 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "functions.php",
+					"settings":
+					{
+						"buffer_size": 522,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								39,
+								39
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		},
 		{
